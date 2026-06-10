@@ -27,36 +27,7 @@
 
 ## Architecture
 
-```
-User Input
-    │
-    ▼
-┌─────────────────┐
-│ classify_intent │  ← ตรวจ keyword: สนใจ/อยากซื้อ/สมัคร
-└────────┬────────┘
-         │
-    ┌────┴────┐
-    ▼         ▼
- RAG Path   Lead Path
-    │            │
-    ▼            ▼
-retrieve_docs  collect_lead
-    │          (GPT → JSON)
-    ▼            │
-check_relevance  ▼
-  │    │      SQLite DB
-  │    │
-found  not found / retry
-  │         │
-  ▼         ▼
-generate_  rewrite_query ──► retrieve_docs (max 2 retries)
- answer         │
-  │         not_found
-  ▼             │
- END         handle_not_found
-                 │
-                END
-```
+![LangGraph Workflow](docs/flowchart_TD.png)
 
 **Stack**
 
