@@ -1,7 +1,7 @@
 # InsureX AI Sales Assistant
 ### Advanced RAG System with LangGraph
 
-ระบบผู้ช่วยพนักงานขายประกันอัจฉริยะ สำหรับ InsureX โดยใช้ Retrieval-Augmented Generation (RAG) และ LangGraph workflow orchestration
+ระบบผู้ช่วยพนักงานขายประกัน สำหรับ InsureX โดยใช้ Retrieval-Augmented Generation (RAG) และ LangGraph workflow orchestration
 
 ---
 
@@ -12,13 +12,9 @@
 - LangGraph StateGraph พร้อม conditional routing และ retry cycle
 - ChromaDB vector database + OpenAI embeddings
 - Error handling เมื่อไม่พบข้อมูล
-
-**Bonus 1 — Lead Collection**
 - ตรวจจับความสนใจซื้ออัตโนมัติจาก keyword
 - GPT สกัดข้อมูลลูกค้า (ชื่อ / อาชีพ / รายได้ / เบอร์โทร)
 - บันทึกลง SQLite พร้อมแสดงใน sidebar แบบ realtime
-
-**Bonus 2 — Session Management**
 - แต่ละ user ได้ session_id (UUID) ต่างกัน
 - ประวัติการสนทนาแยกอิสระต่อ session
 - ล้าง session และเริ่มใหม่ได้ทันที
