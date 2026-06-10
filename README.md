@@ -12,12 +12,6 @@
 - LangGraph StateGraph พร้อม conditional routing และ retry cycle
 - ChromaDB vector database + OpenAI embeddings
 - Error handling เมื่อไม่พบข้อมูล
-- ตรวจจับความสนใจซื้ออัตโนมัติจาก keyword
-- GPT สกัดข้อมูลลูกค้า (ชื่อ / อาชีพ / รายได้ / เบอร์โทร)
-- บันทึกลง SQLite พร้อมแสดงใน sidebar แบบ realtime
-- แต่ละ user ได้ session_id (UUID) ต่างกัน
-- ประวัติการสนทนาแยกอิสระต่อ session
-- ล้าง session และเริ่มใหม่ได้ทันที
 
 ---
 
